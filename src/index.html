@@ -12,14 +12,19 @@
     />-->
   </head>
   <body>
-    <h2 class="task__title">Вітаємо!!!</h2>
-
-    <p class="task__text-text">Тут ви можете створити свій список завдань.</p>
-    <div class="task__container">
-      <ul class="task__list"></ul>
-      <button class="btn__task-create button">Створити нове завдання</button>
-    </div>
-
+    <h2 class="weather__title">Вітаємо!!!</h2>
+    <p class="weather__text">Прогноз погоди для вашого міста</p>
+    <form action="submit" class="js-search">
+      <input type="text" name="query" />
+      <select name="days">
+        <option value="3">3</option>
+        <option value="5">5</option>
+        <option value="7">7</option>
+        <option value="10">10</option>
+      </select>
+      <button>Шукати</button>
+    </form>
+    <ul class="js-list"></ul>
     <script type="module" src="./js/index.js"></script>
   </body>
 </html>
